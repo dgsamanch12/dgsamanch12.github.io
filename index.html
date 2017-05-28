@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>PÁGINA PERSONAL</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,125 +9,194 @@
 <body id="myPage">
 
 <!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
-
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>
-
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>SAMÁN COMPANY</a>
+  <a href="#nosotros" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Nosotros</a>
+  <a href="#servicios" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Servicios</a>
+  <a href="#clientes" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Clientes</a>
+  <a href="#portafolio" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Portafolio</a>
+   <a href="#precios" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Precios</a>
+    <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-hover-white"> Contacto</a>
+    <div class="w3-container w3-right">
+   <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Buscar...">
+    <button class="w3-bar-item w3-button w3-teal">Go</button></div>
+</div>
+</div>
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
+    <a href="#nosotros" class="w3-bar-item w3-button"> Nosotros</a>
+    <a href="#servicios" class="w3-bar-item w3-button"> Servicios</a>
+    <a href="#clientes" class="w3-bar-item w3-button"> Clientes</a>
+    <a href="#portafolio" class="w3-bar-item w3-button"> Portafolio</a>
+    <a href="#precios" class="w3-bar-item w3-button"> Precios</a>
+    <a href="#contacto" class="w3-bar-item w3-button"> Contacto</a>
   </div>
-</div>
+
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Desarrollo Web</b></h1>
+    <p>Brindamos soluciones efectivas que potencian empresas y negocios</p>
   </div>
-</div>
+
+<div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="/imagenes/desli1.jpg" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Creamos la presencia digital que tu marca necesita</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="/imagenes/desli2.jpg" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Gestión de redes sociales</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="/imagenes/desli3.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Satisfacción garantisada</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
 
 <!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
-    </footer>
-  </div>
-</div>
 
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>OUR TEAM</h2>
-<p>Meet the team - our office rats:</p>
+
+<!-- Nostros -->
+<div class="w3-container w3-padding-64 w3-center" id="nosotros">
+<h2>Nosotros</h2>
+<p>Equipo de profesionales de primer nivel</p>
 
 <div class="w3-row"><br>
 
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Johnny Walker</h3>
-  <p>Web Designer</p>
+  <h3>David Gerson</h3>
+  <p>Gerente</p>
 </div>
 
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Rebecca Flex</h3>
-  <p>Support</p>
+  <h3>Luis</h3>
+  <p>Diseñador web</p>
 </div>
 
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Jan Ringo</h3>
-  <p>Boss man</p>
+  <h3>Juan</h3>
+  <p>Analista</p>
 </div>
 
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Kai Ringo</h3>
-  <p>Fixer</p>
-</div>
-
+  <h3>Pepe</h3>
+  <p>Desarrollo & Soporte</p>
 </div>
 </div>
+<div class="w3-container w3-center">
+<p>SAMÁN COMPANY es una agencia digital con más de 15 años de experiencia en Desarrollo Web y Marketing Digital.
+Diseñamos páginas web con los estándares digitales requeridos, a precios  accesibles. </p>
+</div>
+</div>
 
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+<!-- Servicios -->
+<div class="w3-container" id="servicios">
+  <h2>Servicios</h2>
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-black">
+        <th>Servicio</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Diseño Web</td>
+      <td>Usamos la mejor y más moderna tecnología web en plataformas robustas (como WordPress o Drupal, lols mejores CMS libres en el mercado). PHP, HTML5, CSS3, MySQL, JavaScript, Ajax, JQuery, Parallax, Responsive Desgin.</td>
+    </tr>
+    <tr>
+      <td>Marketing Digital</td>
+      <td>Nuestros servicios incluyen: Optimización para posicionamiento en Google, Manejo de campañas pagadas como Google Adwords, Facebook Ads, etc.
+Creación de listas para mailing, envío de boletines/promociones.</td>
+    </tr>
+    <tr>
+      <td>Social Media Marketing</td>
+      <td>Creamos, introducimos y lideramos tu estrategia de marketing en las redes sociales.</td>
+    </tr>
+    <tr>
+      <td>Programación en Sistemas</td>
+      <td>Desarrollo de Sistemas, Intranets, Extranets, Webservice, Software Empresarial, Aplicaciones Web, Base de datos</td>
+    </tr>
+    <tr>
+      <td>Aplicaciones Móviles</td>
+      <td>Desarrollamos aplicaciones para Android e ios</td>
+    </tr>
+  </table>
+</div>
 
+<div class="w3-row"><br></div>
+
+
+<!-- Clientes -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="clientes">
 <div class="w3-quarter">
-<h2>Our Work</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h2>Nuestros Clientes</h2>
+<p align="center">Contamos con una gran cantidad clientes satisfechos que van desde pequeñas empresas unipersonales hasta grandes universidades, mineras o instituciones gubernamentales.</p>
 </div>
 
 <div class="w3-quarter">
 <div class="w3-card-2 w3-white">
   <img src="/w3images/fjords.jpg" alt="Vernazza" style="width:100%">
   <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
+  <h3>Universidad del Pacífico</h3>
+  <p>Somos proveedores web de la Escuela de Post Grado</p>
   </div>
   </div>
 </div>
@@ -136,12 +205,8 @@
 <div class="w3-card-2 w3-white">
   <img src="/w3images/lights.jpg" alt="Cinque Terre" style="width:100%">
   <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
+  <h3>Bolsa de valores de Lima</h3>
+  <p>Somos proveedores web del Departamento de Marketing.</p>
   </div>
   </div>
 </div>
@@ -150,43 +215,35 @@
 <div class="w3-card-2 w3-white">
   <img src="/w3images/mountains.jpg" alt="Monterosso" style="width:100%">
   <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
+  <h3>Minería con futuro</h3>
+  <p>Web especializada en minería responsable en Perú.</p>
   </div>
   </div>
 </div>
-
 </div>
 
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
+
 
 <!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>PRICING</h2>
-    <p>Choose a pricing plan that fits your needs.</p><br>
+<div class="w3-row-padding w3-center w3-padding-64" id="precios">
+    <h2>PRECIOS</h2>
+    <p>Cada proyecto es diferente. Vamos a crear una página web totalmente personalizada a tus necesidades o las de tu empresa
+sin salirnos de tu presupuesto. Te presentamos 3 ejemplos de paquetes para que te sirvan de guía.</p><br>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
-          <p class="w3-xlarge">Basic</p>
+          <p class="w3-xlarge">Estática</p>
         </li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10GB</b> Almacenamiento</li>
         <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">Hasta 8 páginas informativas (Ej: Inicio, Nosotros, Servicios, Contacto, etc)</li>
+        <li class="w3-padding-16"><b>Soporte</b></li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-          <span class="w3-opacity">per month</span>
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 1000</h2>
+          <span class="w3-opacity">anual</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Detalles</button>
         </li>
       </ul>
     </div>
@@ -194,18 +251,18 @@
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme-l2">
-          <p class="w3-xlarge">Pro</p>
+          <p class="w3-xlarge">Simple</p>
         </li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25GB</b> Almacenamiento</li>
         <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">Hasta 6 secciones dinámicas multi-páginas (Ej: Servicios, Fotos, Blog o Noticias, etc)</li>
+        <li class="w3-padding-16"><b>Soporte</b></li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-          <span class="w3-opacity">per month</span>
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 1500</h2>
+          <span class="w3-opacity">anual</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Detalles</button>
         </li>
       </ul>
     </div>
@@ -213,53 +270,82 @@
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
         <li class="w3-theme">
-          <p class="w3-xlarge">Premium</p>
+          <p class="w3-xlarge">A medida</p>
         </li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50GB</b> Almacenamiento</li>
         <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">Diseño personalizado a la necesidad del cliente, interactivo, web service, SEO, uso de CMS</li>
+        <li class="w3-padding-16"><b>Soporte</b></li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-          <span class="w3-opacity">per month</span>
+          <h2 class="w3-wide"><i class="fa fa-usd"></i> 2000</h2>
+          <span class="w3-opacity">anual</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Detalles</button>
         </li>
       </ul>
     </div>
 </div>
 
 <!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contacto">
   <div class="w3-row">
     <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contactanos</span></div>
+      <h3>Dirección</h3>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Jr. Trinidad 281, Cajamarca, PERÚ</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i> +51955851505</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  dgsamanc12@unc.edu.pe</p>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
+    
+<div class="w3-container w3-right">
+    <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue">
+<div>
+<select class="w3-select" name="option">
+    <option value="" disabled selected>Seleccione</option>
+    <option value="1">Sr.</option>
+    <option value="2">Sra.</option>
+  </select>
+  </div>
+ 
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="first" type="text" placeholder="Nombre">
     </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="last" type="text" placeholder="Apellido">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="phone" type="text" placeholder="Celular">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="message" type="text" placeholder="Mensaje">
+    </div>
+</div>
+
+<button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Enviar :D</button>
+</form>
+</div>
   </div>
 </div>
 
@@ -268,10 +354,10 @@
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(-7.153224, -78.508977);
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:14, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
@@ -283,20 +369,17 @@ function myMap()
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <h4>Síguenos</h4>
+  <a class="w3-button w3-large w3-teal" href="facebook.com" title="Facebook"><i class="fa fa-facebook"></i></a>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
   <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
   <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>Diseñado por <a href="https://www.facebook.com/GDavidSaman" target="_blank">David Gerson Samán Chingay</a></p>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
@@ -304,7 +387,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
-
 <script>
 // Script for side navigation
 function w3_open() {
@@ -330,5 +412,6 @@ function openNav() {
 }
 </script>
 
+</div>
 </body>
 </html>
