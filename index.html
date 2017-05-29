@@ -115,6 +115,7 @@ function showDivs(n) {
 <h2>Samán Company</h2>
 <p>Agencia digital</p>
 
+
 <div class="w3-row"><br>
 <div class="w3-container w3-center">
   <img src="/imagenes/letraD.jpg" alt="Boss" style="width:25%" class="w3-circle w3-hover-opacity">
@@ -130,8 +131,9 @@ function showDivs(n) {
     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'laboral')">Trayectoría Laboral</button>
   </div>
   
-  <div id="personal" class="w3-container w3-border city w3-justify" >
-    <h2>David Gersodn Samán Chingay</h2>
+  <div id="personal" class="w3-container w3-center w3-border city" >
+    <h2>David Gerson Samán Chingay</h2>
+    <div class="w3-container w3-justify">
     <p>Estudiante de Ingeniería de Sistemas de la Universidad Nacional de Cajamarca, proactivo y con ganas de superarse cada día. Me considero un participante activo y líder en el trabajo en equipo, orientando a los miembros para alcanzar objetivos. Con grandes capacidades en diseño, desarrollo e implementación de proyectos de software y hardware. Programación en distintos lenguajes, administrador de base de datos, programación Web.</p>
   </div>
 
@@ -162,7 +164,7 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " w3-red";
 }
 </script>
- 
+ </div>
  <div class="w3-container"><br></div>
  
 <div class="w3-container" id="servicios">
@@ -383,7 +385,7 @@ sin salirnos de tu presupuesto. Te presentamos 3 ejemplos de paquetes para que t
 </div>
 
 <!-- Contact Container -->
-<div class="w3-container w3-left w3-padding-64 w3-black" id="contacto">
+<div class="w3-container w3-padding-64 w3-black" id="contacto">
   <div class="w3-row">
     <div class="w3-col m5">
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contáctanos</span></div>
