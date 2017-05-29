@@ -117,29 +117,12 @@ function showDivs(n) {
 
 <div class="w3-row"><br>
 
-<div class="w3-quarter">
+<div class="w3-container w3-center">
   <img src="/imagenes/letraD.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>David Gerson</h3>
   <p>Gerente</p>
 </div>
 
-<div class="w3-quarter">
-  <img src="/imagenes/letraL.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Luis</h3>
-  <p>Diseñador web</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="/imagenes/letraJ.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Juan</h3>
-  <p>Analista</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="/imagenes/letraP.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Pepe</h3>
-  <p>Desarrollo y Soporte</p>
-</div>
 </div>
 <div class="w3-container w3-center">
 <p>SAMÁN COMPANY es una agencia digital con más de 15 años de experiencia en Desarrollo Web y Marketing Digital.
@@ -270,7 +253,29 @@ sin salirnos de tu presupuesto. Te presentamos 3 ejemplos de paquetes para que t
           <span class="w3-opacity">anual</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Detalles</button>
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div align = "left" class="w3-container">
+    <ul>    
+<li>Hasta 8 páginas informativas (Ej: Inicio, Nosotros, Servicios, Contacto, etc)</li>
+<li>Diseño personalizado</li>
+<li>Sin administrador de contenidos por CMS</li>
+<li>1 GB espacio de Disco Duro</li>
+<li>1 año de Dominio y Hosting</li>
+<li>Hasta 5 cuentas de Email</li>
+<li>Estadísticas de tráfico con Google Analytics</li>
+<li>Hosting compartido sin acceso a Cpanel</li></ul>
+      </div>
+    </div>
+  </div>
+          
         </li>
       </ul>
     </div>
