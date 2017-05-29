@@ -76,7 +76,7 @@
       </div>
     </div>
   </div>
-  
+ </div>
   <script>
 // Slideshow
 var slideIndex = 1;
@@ -122,8 +122,47 @@ function showDivs(n) {
   <p>Desarrollador</p>
 </div>
 </div>
-</div>
 
+<div class="w3-container w3-center">
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'personal')">Perfil Personal</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'laboral')">Trayectoría Laboral</button>
+  </div>
+  
+  <div id="personal" class="w3-container w3-border city">
+    <h2>David Gerson Samán Chingay</h2>
+    <p>Estudiante de Ingeniería de Sistemas de la Universidad Nacional de Cajamarca, proactivo y con ganas de superarse cada día. Me considero un participante activo y líder en el trabajo en equipo, orientando a los miembros para alcanzar objetivos. Con grandes capacidades en diseño, desarrollo e implementación de proyectos de software y hardware. Programación en distintos lenguajes, administrador de base de datos, programación Web.</p>
+  </div>
+
+  <div id="laboral" class="w3-container w3-border city" style="display:none">
+  
+    <h2>Descripción puesto</h2>
+    <div class="w3-container w3-left"><ul>
+    <li>Empresa - (Año) - Descripción puesto</li>
+    <li>Empresa - (Año) - Descripción puesto</li>
+    <li>Empresa - (Año) - Descripción puesto</li>
+    </ul> </div>
+  </div>
+  </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+ 
 <div class="w3-container" id="servicios">
 <div class="w3-container w3-center">
   <h2>Servicios</h2></div>
