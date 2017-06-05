@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,maximun-scale=1.0, minimun-scale=1.0">
-<title>Inge Web</title>
+<title>Información Cajamarca</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/estiloagricola.css">
@@ -15,15 +15,28 @@
 
 <header> 
     <div class="w3-panel w3-red" id="titulo">
-        <h1>Informacdi ón Industrial, Agrícola y Ganadera de Cajamarca</h1>
+        <h1>Información Industrial, Agrícola y Ganadera de Cajamarca</h1>
     </div>
 </header>
 
 <body>
-<section>
-<aside id = col1>
-</aside>
-<article id =  col2>
+
+<div class="w3-bar w3-red">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 3</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+
+
 <div class="w3-col m6 w3-blue w3-justify" id =  "contenido">
     <p>La actividad agraria no solo es importante porque tiene como una de sus metas satisfacer la demanda de alimentos de la 
     población, sino también, porque contribuye a modificar la estructura de los mercados a través de producción alternativa, 
@@ -38,9 +51,8 @@
     y el tamaño de los tubérculos. De la papa se elabora el Chuño y la papaseca. Otros Cultivos:Otros productos agrícolas de la 
     Región Quechua son; las habas, las arvejas y una gran variedad de hortalizas. En los pisos más altos de la Región Suni se 
     cultivan: La cebada, la oca, la mashua, el olluco, la quinua, la kiwicha, la cañiwa, etc.</p>
-  </div></article>
-<aside id = col3>
-<p>Fotografías</p></aside>
+  </div>
+
 
 
 <footer>
@@ -91,7 +103,17 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-  </section>
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 
 </html> 
