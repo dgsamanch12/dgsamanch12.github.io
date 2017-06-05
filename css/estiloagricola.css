@@ -1,0 +1,51 @@
+body {
+	
+	display:block;
+	margin:0 auto;
+	padding:0;
+	backgroud:#ff6;
+	width:960px;
+	
+	
+}
+
+#col1{
+	height:460px;
+background:#AB8A6C;
+width:180px;
+float:left;
+}
+#col2{
+	height:460px;
+background:#CCB18E;
+width:600px;
+float:left;
+}
+#col3{
+	height:460px;
+background:#AB8A6C;
+width:600px;
+float:left;
+}
+section {
+	
+	display:block;
+	margin:0;
+	padding:0;
+	
+}
+
+article {
+	
+	display:block;
+	margin:0;
+	padding:0;
+	
+}
+
+html{
+	display:block;
+	margin:0;
+	padding:0;
+	backgroud:#FFF;
+}
