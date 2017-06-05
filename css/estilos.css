@@ -4,32 +4,3 @@ body {
 	
 }
 
-#informacion{
-	width:80%;
-	max-width:1000;
-	margin:0 auto;
-	overflow:hidden;
-	
-}
-
-#submenu{
-	width:20%;
-	padding:20px;
-	float:left;
-	box-sizing:border-box;
-	
-}
-
-#foto{
-	width:20%;
-	padding:20px;
-	float:right;
-	box-sizing:border-box;
-	
-}
-#contenido{
-	width:60%;
-	padding:20px;
-	float:left;
-	box-sizing:border-box;
-}
