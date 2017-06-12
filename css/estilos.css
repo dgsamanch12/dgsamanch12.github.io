@@ -9,10 +9,3 @@ body {
 font-family: 'Neucha', cursive;
 }
 
-
-
-#mefi {
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
