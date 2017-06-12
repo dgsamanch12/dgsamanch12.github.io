@@ -13,20 +13,25 @@
 <link rel="stylesheet" href="css/estilos.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="/imagenes/unc.ico">
-<link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+</style>
+<body id="myPage">
 
-
+<!-- Navbar -->
 <div class="w3-top">
-	<div class="w3-bar w3-theme-d2 w3-left-align">
-  	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  	<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>SAMÁN COMPANY</a>
-  	<a href="#nosotros" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-user w3-margin-right"></i>Nosotros</a>
-  	<a href="#servicios" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-briefcase w3-margin-right"></i>Servicios</a>
-  	<a href="#clientes" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-users w3-margin-right"></i>Clientes</a>
-   	<a href="#precios" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-money w3-margin-right"></i>Precios</a>
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>SAMÁN COMPANY</a>
+  <a href="#nosotros" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-user w3-margin-right"></i>Nosotros</a>
+  <a href="#servicios" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-briefcase w3-margin-right"></i>Servicios</a>
+  <a href="#clientes" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-users w3-margin-right"></i>Clientes</a>
+   <a href="#precios" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-money w3-margin-right"></i>Precios</a>
     <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-envelope w3-margin-right"></i>Contacto</a>
 	<a href="https://dgsamanch12.github.io/infocajamarca.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-envelope w3-margin-right"></i>Práctica 1</a>
- 	</div>
+ </div>
 </div>
 
  <!-- Navbar on small screens -->
@@ -36,19 +41,16 @@
     <a href="#clientes" class="w3-bar-item w3-button">Clientes</a>
     <a href="#precios" class="w3-bar-item w3-button">Precios</a>
     <a href="#contacto" class="w3-bar-item w3-button">Contacto</a>
-	<a href="https://dgsamanch12.github.io/infocajamarca.html" class="w3-bar-item w3-button">Práctica 1</a>
+	  <a href="https://dgsamanch12.github.io/infocajamarca.html" class="w3-bar-item w3-button">Práctica 1</a>
   </div>
+ 
 
-<body id="myPage">
-
-<header>
-	<div class="w3-panel w3-center">
+<!-- Image Header --> 
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+  <div class="w3-panel w3-center">
     <h1><b>Desarrollo Web</b></h1>
     <p>Brindamos soluciones efectivas que potencian empresas y negocios</p>
-  	</div>
-</header>
-<!-- Image Header --> 
-<div class="w3-content "style="max-width:1100px;margin-top:80px;margin-bottom:80px"> 
+  </div>
   <div class="w3-container">
     <div class="w3-display-container mySlides">
       <img src="/imagenes/desli1.jpg" alt="Boss" style="width:100%">
@@ -73,6 +75,36 @@
  </div>
 </div>
 </div>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
 
 <!-- Nosotros -->
 <div class="w3-container w3-padding-64 w3-center" id="nosotros">
@@ -102,6 +134,22 @@
     </div>
   </div>
 </div>
+ 
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
  
 <div class="w3-container"><br></div>
 <div class="w3-container"><br></div>
@@ -417,54 +465,6 @@ height=400px style="border:0" width="100%" ></iframe></div>
   </div>
 </footer>
 </div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
-
-<script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
-
 <script>
 // Script for side navigation
 function w3_open() {
@@ -489,6 +489,5 @@ function openNav() {
     }
 }
 </script>
-
 </body>
 </html>
